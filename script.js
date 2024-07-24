@@ -1,5 +1,5 @@
 const filterButtons = document.querySelectorAll(".filters button")
-const cards = document.querySelectorAll(".projects_page_container_grid .projects_page_box")
+const cards = document.querySelectorAll(".box_container .box")
 
 const filterCards = (e) => {
     document.querySelector(".active_button").classList.remove("active_button")
