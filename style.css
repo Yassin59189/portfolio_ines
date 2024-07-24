@@ -240,7 +240,7 @@ section {
     margin-left: 2.8rem;
 }
 
-@media (max-width: 1600px){
+@media (max-width: 1750px){
     .projects_container_grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 10rem;
@@ -409,6 +409,12 @@ section {
     gap: 3rem;
     justify-items: center;
     align-items: center;
+}
+
+@media (max-width: 1750px){
+    .projects_page_container_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .projects_home {
