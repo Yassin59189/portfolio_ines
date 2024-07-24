@@ -27,6 +27,9 @@
             </div>
             <!-- home CTA -->
              <button class="CTA home">SEE MORE <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg></button>
+             <div class="scroll_to_bottom" onclick="scrollToBottom()">
+                <img src="assets/scroll.svg" alt="">
+             </div>
         </div>
       </section>
     <!-- about me section -->
@@ -65,12 +68,12 @@
         <div class="projects_content">
             <h1 class="projects_section_title">My Projects Highlight</h1>
             <div class="filters">
-                <button class="filter active"><span>ALL</span></button>
-                <button class="filter"><span>UI/UX</span></button>
-                <button class="filter"><span>SOCIAL MEDIA</span></button>
-                <button class="filter"><span>PRINT DESIGN</span></button>
-                <button class="filter"><span>BRAND IDENTITY</span></button>
-                <button class="filter"><span>MOTION GRAPHICS</span></button>
+                <button class="filter active_button" data-name="all">ALL</button>
+                <button class="filter" data-name="ui/ux">UI/UX</button>
+                <button class="filter" data-name="social media">SOCIAL MEDIA</button>
+                <button class="filter">PRINT DESIGN</button>
+                <button class="filter">BRAND IDENTITY></button>
+                <button class="filter">MOTION GRAPHICS</button>
             </div>
             <div class="projects_container">
                 <div class="projects_container_grid">
@@ -147,7 +150,7 @@
         <div class="contact_content">
             <h1 class="contact_content_title">Let's <br>Work Together</h1>
             <div class="contact_info">
-                <button class="email info"><img src="assets/email.svg" alt="" class="contact_icon">Ines.mlaouhi.pro@gmail.com</button>
+                <button class="email info"><img src="assets/email.svg" alt="" class="contact_icon"><a href="mailto:ines.mlaouhi.pro@gmail.com">Ines.mlaouhi.pro@gmail.com</a></button>
                 <button class="resume info"><img src="assets/resume.svg" alt="" class="contact_icon">Download My Resume</button>
             </div>
         </div>
@@ -162,5 +165,6 @@
             <a href="#" target="_blank"><img src="assets/github.svg" alt="github"></a>
         </div>
        </footer>
+       <script src="script.js"></script>
 </body>
 </html>

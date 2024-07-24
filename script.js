@@ -14,3 +14,22 @@ const filterCards = (e) => {
 }
 
 filterButtons.forEach(button => button.addEventListener("click", filterCards))
+
+function scrollToBottom () {
+    var height = document.body.scrollHeight
+    window.scroll(0, height)
+}
+
+window.addEventListener('scroll', checkScroll)
+
+function checkScroll(){
+    const scrollIcon = document.querySelector(".scroll_to_bottom")
+    var height = document.documentElement.scrollHeight
+    var current = window.scrollY+window.innerHeight
+    if (current >= height) {
+        scrollIcon.classList.add("hide")
+    }
+    else {
+        scrollIcon.classList.remove("hide")
+    }
+}

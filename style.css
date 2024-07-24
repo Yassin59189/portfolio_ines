@@ -89,6 +89,13 @@ section {
     width: 20rem;
 }
 
+.scroll_to_bottom {
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    cursor: pointer;
+}
+
 .about_me_content {
     display: flex;
     justify-content: space-between;
@@ -168,13 +175,13 @@ section {
 }
 
 .projects_container_grid {
-    margin-top: 6rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
-    gap: 10rem;
-    width: 100%;
+        margin-top: 6rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+        width: 100%;
 }
 
 .projects_box {
@@ -283,6 +290,12 @@ section {
     border: 2px solid #DEDEDE;
     border-radius: .8rem;
     cursor: pointer;
+}
+
+.info a{
+    display: flex;
+    align-items: center;
+    color: #DEDEDE;
 }
 
 .resume {
@@ -406,7 +419,7 @@ section {
     text-align: center;
 }
 
-.projects_page_box.hide {
+.hide {
     display: none;
 }
 
