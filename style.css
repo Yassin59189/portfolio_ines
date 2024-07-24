@@ -1,0 +1,544 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url("assets/hero-bg.svg");
+    color: white;
+}
+
+section {
+    min-height: 80vh;
+    padding: 0 9%;
+}
+
+.header {
+    font-family: 'rubik';
+    width: 100%;
+    padding: 3rem 4%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbar a{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: 6rem;
+}
+
+.navbar a.active{
+    text-decoration: underline;
+}
+
+
+.home_content {
+    text-align: center;
+    margin-top: 20rem;
+}
+
+.home_title h2{
+    font-size: 3.8rem;
+    font-family: 'syne';
+    font-weight: 700;
+}
+
+.home_title h1{
+    font-size: 6rem;
+    font-family: 'syne';
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+.CTA {
+    background: linear-gradient(90deg, rgba(58,77,180,1) 0%, rgba(88,40,126,1) 82%);
+    color: white;
+    padding: 1.7rem 3rem;
+    width: auto;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    font-family: 'rubik';
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.CTA.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 7rem;
+    width: 20rem;
+}
+
+.about_me_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_me_text {
+    width: 50%;
+}
+
+.about_me_title {
+    font-family: 'syne';
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.about_me_description {
+    font-family: 'rubik';
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+    color: #A9A9A9;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.about_me_right_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_me_img {
+    width: 40rem;
+}
+
+.about_me_links {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.CTA.about_me {
+    margin-top: 6rem;
+}
+
+.projects_section_title {
+    font-family: 'syne';
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter {
+    color: #A9A9A9;
+    background: transparent;
+    font-family: 'inter';
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 7rem;
+}
+
+.active_button{
+    text-decoration: underline;
+}
+
+.projects_container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.projects_container_grid {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+}
+
+.projects_box {
+    margin: 0 auto;
+    color: white;
+}
+
+.project_title {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.project_name {
+    font-family: 'syne';
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.line {
+    width: 3rem;
+    height: 2px;
+    background: #466AB0;
+    margin-left: 2rem;
+}
+
+.type {
+    font-family: 'syne';
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.projects_cta {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.skills_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_container_grid {
+    margin-top: 10rem;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
+}
+
+.skills_container_grid img{
+    margin-left: 2.8rem;
+}
+
+@media (max-width: 1600px){
+    .projects_container_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
+    }
+}
+
+.contact {
+    min-height: 40vh;
+}
+
+.contact_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20rem;
+}
+
+.contact_content_title {
+    font-family: 'syne';
+    font-size: 6.2rem;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 14rem;
+    align-items: center;
+}
+
+.contact_icon {
+    width: 3rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40rem;
+    padding: 1.5rem 1rem;
+    padding-right: 5rem;
+    background: transparent;
+    color: #DEDEDE;
+    font-family: 'rubik';
+    font-size: 2rem;
+    font-weight: 500;
+    border: 2px solid #DEDEDE;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+.resume {
+    padding-right: 11.6rem;
+}
+
+.footer {
+    padding: 0 9% 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tn {
+    width: 2rem;
+}
+
+.rights {
+    font-family: 'rubik';
+    color: #A9A9A9;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 27rem;
+}
+
+
+/* about page */
+
+.about_home {
+    min-height: 70vh;
+}
+
+.about_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.about_title {
+    margin-bottom: auto;
+}
+
+.about_title h1{
+    font-family: 'syne';
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.about_title img{
+    width: 3rem;
+}
+
+.about_description {
+    width: 70%;
+}
+
+.about_description p{
+    font-family: 'rubik';
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #A9A9A9;
+    text-align: justify;
+}
+
+.personal_interests_p {
+    margin-top: 2rem;
+}
+
+.about_line {
+    width: 100%;
+    height: 1px;
+    background: #484E53;
+    margin-top: 6rem;
+}
+
+.socials {
+    min-height: 50vh;
+}
+
+.socials_title {
+    font-family: 'syne';
+    font-size: 4.1rem;
+    font-weight: 700;
+}
+
+.social_links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.social_links a{
+    font-family: 'inter';
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #949494;
+}
+
+.about_contact_content {
+    margin-top: 0;
+}
+
+/* projects page */
+
+.projects_page_container_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 3rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.projects_home {
+    min-height: 65vh;
+}
+
+.projects_page_box {
+    text-align: center;
+}
+
+.projects_page_box.hide {
+    display: none;
+}
+
+.projects_page_title {
+    margin-top: 1rem;
+}
+
+
+.projects_page_cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 22rem;
+    margin-top: 10rem;
+}
+
+.projects_page_contact {
+    margin-top: 15rem;
+}
+
+
+/* contact page */
+.contact_home {
+    min-height: 35vh;
+}
+
+.contact_home_content {
+    margin-top: 20rem;
+}
+
+.contact_title h3{
+    font-family: 'rubik';
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #949494;
+    margin-top: 2rem;
+}
+
+.contact_line {
+    width: 100%;
+    height: 1px;
+    background: #484E53;
+    margin-top: 10rem;
+}
+
+.contact_form_container {
+    min-height: 50vh;
+}
+
+.contact_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_form_title {
+    font-family: 'syne';
+    font-size: 5rem;
+    font-weight: 700;
+    width: 50%;
+}
+
+.form_fields {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.input {
+    margin-top: 3rem;
+    width: 100%;
+    height: 6.5rem;
+    background: hsla(0, 0%, 96%, 0.2);
+    border-radius: .7rem;
+    padding-left: 2rem;
+}
+
+.input::placeholder, .input{
+    font-family: 'rubik';
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.message {
+    height: 100px;
+    resize: none;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+.message::placeholder {
+    padding-top: 3rem;
+}
+
+.submit {
+    width: 11.1rem;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* project details page */
+
+.project_story {
+    font-family: 'syne';
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-top: 6rem;
+}
+
+.project_description {
+    font-family: 'rubik';
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 2.3rem;
+    color: #9CA7B8;
+    margin-top: 3rem;
+}
+
+.project_images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.project_images img {
+    width: 40%;
+}
+
+.big_img {
+    width: 100%;
+}
