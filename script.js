@@ -1,5 +1,6 @@
 const filterButtons = document.querySelectorAll(".filters button")
 const cards = document.querySelectorAll(".box_container .box")
+const email = document.getElementById("emailBtn")
 
 const filterCards = (e) => {
     document.querySelector(".active_button").classList.remove("active_button")
@@ -33,3 +34,7 @@ function checkScroll(){
         scrollIcon.classList.remove("hide")
     }
 }
+
+emailBtn.addEventListener("click", function() {
+    window.location.href = "mailto:ines.mlaouhi.pro@gmail.com"
+})

@@ -26,14 +26,16 @@
                 <h1>Designing Digital Delight</h1>
             </div>
             <!-- home CTA -->
-             <button class="CTA home">SEE MORE <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg></button>
+             <button class="CTA home" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">SEE MORE <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg></button>
              <div class="scroll_to_bottom" onclick="scrollToBottom()">
                 <img src="assets/scroll.svg" alt="">
              </div>
         </div>
       </section>
+      <!-- line -->
+      <div class="sep_line"></div>
     <!-- about me section -->
-     <section class="about_me">
+     <section class="about_me" id="about">
         <div class="about_me_content">
             <div class="about_me_text">
                 <!-- about me title -->
@@ -63,6 +65,7 @@
              
         </div>
      </section>
+     <div class="sep_line"></div>
     <!-- projects section -->
      <section class="projects">
         <div class="projects_content">
@@ -78,7 +81,7 @@
             <div class="projects_container  box_container">
                 <div class="projects_container_grid">
                     <div class="projects_box box" data-name="social media">
-                        <img src="assets/project.png" alt="project">
+                        <a href="project_detail_1.html"><img src="assets/project.png" alt="project"></a>
                         <div class="project_info">
                             <div class="project_title">
                                 <h2 class="project_name">Project Title</h6>
@@ -88,8 +91,10 @@
                             <p class="type">Work Type</p>
                         </div>
                     </div>
+
                     <div class="projects_box box" data-name="social media">
-                        <img src="assets/project.png" alt="project">
+                        <a href="project_detail_1.html"><img src="assets/project.png" alt="project"></a>
+                        
                         <div class="project_info">
                             <div class="project_title">
                                 <h2 class="project_name">Project Title</h6>
@@ -100,7 +105,7 @@
                         </div>
                     </div>
                     <div class="projects_box box">
-                        <img src="assets/project.png" alt="project">
+                        <a href="project_detail_1.html"><img src="assets/project.png" alt="project"></a>
                         <div class="project_info">
                             <div class="project_title">
                                 <h2 class="project_name">Project Title</h6>
@@ -111,7 +116,7 @@
                         </div>
                     </div>
                     <div class="projects_box box">
-                        <img src="assets/project.png" alt="project">
+                        <a href="project_detail_1.html"><img src="assets/project.png" alt="project"></a>
                         <div class="project_info">
                             <div class="project_title">
                                 <h2 class="project_name">Project Title</h6>
@@ -125,7 +130,7 @@
             </div>
             
             <!-- prjects CTA -->
-             <button class="CTA projects_cta">EXPLORE MORE <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg></button>
+             <button class="CTA projects_cta" onclick="window.location.href='projects.html'">EXPLORE MORE <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg></button>
              <!-- skills -->
               <div class="skills_container">
                 <div class="skills_container_grid">
@@ -150,11 +155,13 @@
         <div class="contact_content">
             <h1 class="contact_content_title">Let's <br>Work Together</h1>
             <div class="contact_info">
-                <button class="email info"><img src="assets/email.svg" alt="" class="contact_icon"><a href="mailto:ines.mlaouhi.pro@gmail.com">Ines.mlaouhi.pro@gmail.com</a></button>
+                <button class="email info" id="emailBtn"><img src="assets/email.svg" alt="" class="contact_icon">Ines.mlaouhi.pro@gmail.com</button>
                 <button class="resume info"><img src="assets/resume.svg" alt="" class="contact_icon">Download My Resume</button>
             </div>
         </div>
       </section>
+            <!-- line -->
+            <div class="sep_line"></div>
       <!-- footer -->
        <footer class="footer">
         <p class="rights"><img src="assets/tn.svg" alt="" class="tn"> Mlaouhi Ines © 2024 All rights reserved.</p>
