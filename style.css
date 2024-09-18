@@ -205,7 +205,7 @@ section.about_me {
 
 .projects_container {
     display: flex;
-    justify-content: space-between;
+
     
 }
 
@@ -471,6 +471,7 @@ section.about {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+    flex-wrap: wrap;
     gap: 3rem;
     justify-items: center;
     align-items: center;
@@ -492,6 +493,17 @@ section.about {
 
 .hide {
     display: none;
+}
+
+.navigation_arrows {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation_arrows button {
+    cursor: pointer;
 }
 
 .projects_page_title {
