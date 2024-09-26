@@ -29,36 +29,6 @@ const filterCards = (e) => {
   });
 };
 
-let currentSection = 0;
-
-function showSection(index) {
-  sections.forEach((section, i) => {
-    section.classList.add("hide");
-    if (i === index) {
-      section.classList.remove("hide");
-    }
-  });
-}
-
-
-
-nextBtn.addEventListener("click", () => {
-  if (currentSection < sections.length - 1) {
-    currentSection++;
-    showSection(currentSection);
-    console.log(currentSection)
-  }
-});
-
-previousBtn.addEventListener("click", () => {
-  if (currentSection > 0) {
-    currentSection--;
-    showSection(currentSection);
-  }
-});
-
-showSection(currentSection);
-
 filterButtons.forEach((button) => button.addEventListener("click", filterCards));
 
 function scrollToBottom() {

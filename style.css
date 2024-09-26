@@ -209,6 +209,15 @@ section.about_me {
     
 }
 
+.filtered_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+    align-items: center;
+}
+
 .projects_container_grid {
         margin-top: 6rem;
         display: grid;
