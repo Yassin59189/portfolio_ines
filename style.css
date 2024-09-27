@@ -94,6 +94,10 @@ section {
 
 }
 
+.box img {
+    border-radius: 1.3rem;
+}
+
 .CTA.home{
     display: flex;
     align-items: center;
@@ -631,6 +635,11 @@ section.about {
     line-height: 2.3rem;
     color: #9CA7B8;
     margin-top: 3rem;
+}
+
+.box {
+    width: 100%;
+    border-radius: 1rem;
 }
 
 .project_images {
