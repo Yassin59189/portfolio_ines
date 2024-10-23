@@ -119,9 +119,7 @@ function checkScroll() {
   }
 }
 
-emailBtn.addEventListener("click", function () {
-  window.location.href = "mailto:ines.mlaouhi.pro@gmail.com";
-});
+
 
 
 
